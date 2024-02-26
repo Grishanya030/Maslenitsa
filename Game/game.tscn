@@ -1,0 +1,83 @@
+[gd_scene load_steps=5 format=3 uid="uid://bly424r1gow3v"]
+
+[ext_resource type="Script" path="res://Game/game.gd" id="1_q37rp"]
+[ext_resource type="Texture2D" uid="uid://mru0mip6bpsh" path="res://icon.svg" id="1_sxs58"]
+[ext_resource type="PackedScene" uid="uid://dr6jrpcih1syt" path="res://Game/main_hero.tscn" id="2_onqwi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eax3r"]
+size = Vector2(104, 130)
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_q37rp")
+
+[node name="Floor" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Floor"]
+position = Vector2(-57, 578)
+shape = SubResource("RectangleShape2D_eax3r")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Floor"]
+position = Vector2(1200, 582)
+shape = SubResource("RectangleShape2D_eax3r")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor"]
+position = Vector2(574, 597)
+scale = Vector2(9.07813, 0.796875)
+texture = ExtResource("1_sxs58")
+
+[node name="MainHero" parent="." instance=ExtResource("2_onqwi")]
+position = Vector2(543, 530)
+
+[node name="Blins" type="Node" parent="."]
+
+[node name="BlinTimer" type="Timer" parent="Blins"]
+wait_time = 3.0
+autostart = true
+
+[node name="Texts" type="Node" parent="."]
+
+[node name="points" type="Label" parent="Texts"]
+offset_left = 341.0
+offset_top = 88.0
+offset_right = 397.0
+offset_bottom = 116.0
+theme_override_font_sizes/font_size = 20
+text = "0"
+
+[node name="text2" type="Label" parent="Texts"]
+offset_left = 97.0
+offset_top = 61.0
+offset_right = 392.0
+offset_bottom = 89.0
+theme_override_font_sizes/font_size = 20
+text = "Количество очков у игрока
+"
+
+[node name="text" type="Label" parent="Texts"]
+offset_left = 97.0
+offset_top = 90.0
+offset_right = 311.0
+offset_bottom = 118.0
+theme_override_font_sizes/font_size = 20
+text = "."
+
+[node name="Leaders" type="Label" parent="Texts"]
+offset_left = 892.0
+offset_top = 67.0
+offset_right = 1100.0
+offset_bottom = 90.0
+
+[node name="Time" type="Label" parent="Texts"]
+offset_left = 524.0
+offset_top = 38.0
+offset_right = 556.0
+offset_bottom = 86.0
+theme_override_font_sizes/font_size = 20
+text = "60"
+
+[node name="GameEnd" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="Blins/BlinTimer" to="." method="_on_blin_timer_timeout"]
+[connection signal="timeout" from="GameEnd" to="." method="_on_game_end_timeout"]

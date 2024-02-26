@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2nq80cg3x1qf"]
+
+[ext_resource type="Texture2D" uid="uid://cl56cyhcmx7kh" path="res://ЛОГОНФ.png" id="1_cpl2d"]
+[ext_resource type="Script" path="res://Game/Blin.gd" id="1_gynly"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tsm3f"]
+size = Vector2(75, 20)
+
+[node name="Blin" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_gynly")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_tsm3f")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/CollisionShape2D"]
+position = Vector2(-4.17233e-06, -9.53674e-07)
+scale = Vector2(0.104, 0.03)
+texture = ExtResource("1_cpl2d")
