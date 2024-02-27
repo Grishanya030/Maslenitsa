@@ -76,7 +76,7 @@ theme_override_font_sizes/font_size = 20
 text = "60"
 
 [node name="GameEnd" type="Timer" parent="."]
-wait_time = 10.0
+wait_time = 60.0
 autostart = true
 
 [connection signal="timeout" from="Blins/BlinTimer" to="." method="_on_blin_timer_timeout"]

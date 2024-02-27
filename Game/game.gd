@@ -8,7 +8,7 @@ var blin_pre = preload("res://Game/blin.tscn")
 
 func _ready():
 	label_text.text = Global.player
-	#leaders_label.text = 
+	leaders_label.text = Global.LeagersList
 
 	pass
 

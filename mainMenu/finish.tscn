@@ -43,4 +43,10 @@ offset_bottom = 329.0
 theme_override_font_sizes/font_size = 20
 text = "Вы набрали       очков"
 
+[node name="Leaders" type="Label" parent="."]
+offset_left = 846.0
+offset_top = 118.0
+offset_right = 1054.0
+offset_bottom = 141.0
+
 [connection signal="pressed" from="Finish" to="." method="_on_finish_pressed"]
