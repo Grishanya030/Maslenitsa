@@ -13,11 +13,11 @@ script = ExtResource("1_q37rp")
 [node name="Floor" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Floor"]
-position = Vector2(-57, 578)
+position = Vector2(-57, 496)
 shape = SubResource("RectangleShape2D_eax3r")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Floor"]
-position = Vector2(1200, 582)
+position = Vector2(1208, 500)
 shape = SubResource("RectangleShape2D_eax3r")
 
 [node name="Sprite2D" type="Sprite2D" parent="Floor"]
@@ -31,7 +31,7 @@ position = Vector2(543, 530)
 [node name="Blins" type="Node" parent="."]
 
 [node name="BlinTimer" type="Timer" parent="Blins"]
-wait_time = 3.0
+wait_time = 2.0
 autostart = true
 
 [node name="Texts" type="Node" parent="."]

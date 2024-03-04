@@ -11,7 +11,8 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _physics_process(delta):
 	var area = $Area2D.get_overlapping_bodies()
 	for body in area:
-		body.queue_free()
+		if (body != $Floor/CollisionShape2D3 || body != $Floor/CollisionShape2D2 || body != $Floor):
+			body.queue_free()
 		Global.points+=1
 
 

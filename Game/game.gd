@@ -15,6 +15,7 @@ func _ready():
 func _process(delta):
 	label_points.text = str(Global.points)
 	time_label.text = str(round(time_timer.time_left))
+	Global.game_time = round(time_timer.time_left)
 	pass
 
 func blin_spawn():
