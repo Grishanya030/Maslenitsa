@@ -6,6 +6,7 @@ var Leaders_Names = []
 var Leaders_Points = []
 var LeagersList = ""
 var game_time = 0
+var gravity = 100 
 
 func readLeaders():
 	var file = FileAccess.open("res://Game/leaderboard.txt", FileAccess.READ)

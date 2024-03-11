@@ -31,7 +31,7 @@ position = Vector2(543, 530)
 [node name="Blins" type="Node" parent="."]
 
 [node name="BlinTimer" type="Timer" parent="Blins"]
-wait_time = 2.0
+wait_time = 0.4
 autostart = true
 
 [node name="Texts" type="Node" parent="."]
