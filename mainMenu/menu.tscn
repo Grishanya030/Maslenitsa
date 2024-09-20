@@ -6,17 +6,17 @@
 script = ExtResource("1_xmtmo")
 
 [node name="start" type="Button" parent="."]
-offset_left = 414.0
-offset_top = 175.0
-offset_right = 721.0
-offset_bottom = 266.0
+offset_left = 773.0
+offset_top = 379.0
+offset_right = 1080.0
+offset_bottom = 470.0
 text = "Играть"
 
 [node name="exit" type="Button" parent="."]
-offset_left = 416.0
-offset_top = 313.0
-offset_right = 723.0
-offset_bottom = 404.0
+offset_left = 775.0
+offset_top = 517.0
+offset_right = 1082.0
+offset_bottom = 608.0
 text = "Выход"
 
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]

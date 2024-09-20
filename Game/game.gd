@@ -20,7 +20,7 @@ func _process(delta):
 
 func blin_spawn():
 	var blin = blin_pre.instantiate()
-	blin.position= Vector2(randi_range(100,1100), -500)
+	blin.position= Vector2(randi_range(100,1800), -500)
 	$Blins.add_child(blin)
 	pass
 

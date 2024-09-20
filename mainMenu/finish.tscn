@@ -6,40 +6,40 @@
 script = ExtResource("1_h374q")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 394.0
-offset_top = 188.0
-offset_right = 569.0
-offset_bottom = 218.0
+offset_left = 803.0
+offset_top = 391.0
+offset_right = 978.0
+offset_bottom = 421.0
 theme_override_font_sizes/font_size = 20
 text = "Спасибо за игру,"
 
 [node name="name" type="Label" parent="."]
-offset_left = 568.0
-offset_top = 189.0
-offset_right = 660.0
-offset_bottom = 217.0
+offset_left = 977.0
+offset_top = 392.0
+offset_right = 1069.0
+offset_bottom = 420.0
 theme_override_font_sizes/font_size = 20
 text = "Гришаня"
 
 [node name="Finish" type="Button" parent="."]
-offset_left = 374.0
-offset_top = 236.0
-offset_right = 688.0
-offset_bottom = 286.0
+offset_left = 783.0
+offset_top = 439.0
+offset_right = 1097.0
+offset_bottom = 489.0
 text = "Заново"
 
 [node name="Очки" type="Label" parent="."]
-offset_left = 545.0
-offset_top = 305.0
-offset_right = 585.0
-offset_bottom = 328.0
+offset_left = 954.0
+offset_top = 508.0
+offset_right = 994.0
+offset_bottom = 531.0
 text = "20"
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 414.0
-offset_top = 301.0
-offset_right = 633.0
-offset_bottom = 329.0
+offset_left = 823.0
+offset_top = 504.0
+offset_right = 1042.0
+offset_bottom = 532.0
 theme_override_font_sizes/font_size = 20
 text = "Вы набрали       очков"
 

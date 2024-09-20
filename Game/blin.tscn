@@ -15,6 +15,6 @@ script = ExtResource("1_gynly")
 shape = SubResource("RectangleShape2D_tsm3f")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/CollisionShape2D"]
-position = Vector2(-4.17233e-06, -9.53674e-07)
-scale = Vector2(0.104, 0.03)
+position = Vector2(-4.17233e-06, -16)
+scale = Vector2(0.104, 0.062)
 texture = ExtResource("1_cpl2d")
